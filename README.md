@@ -14,4 +14,8 @@ This tool is designed to help security professionals and bug bounty hunters iden
 
 Install the required libraries using pip:
 ```bash
-pip install requests dnspython
+pip install -r requirements.txt
+```
+## Usage
+```bash
+python overwatch.py --help
