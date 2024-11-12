@@ -7,11 +7,15 @@ This tool is designed to help security professionals and bug bounty hunters iden
 - Utilizes a list of service error signatures to detect misconfigurations.
 - Provides real-time feedback on subdomain status (vulnerable, not vulnerable, or unreachable).
 
+## Installation
+- Clone this github repo using git clone
+```bash
+git clone https://github.com/harshawasthi512/overwatch
+```
 ## Requirements
 - Python 3.x
 - `requests` library
 - `dnspython` library
-
 Install the required libraries using pip:
 ```bash
 pip install -r requirements.txt
