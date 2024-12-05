@@ -55,6 +55,7 @@ BLUE = "\33[94m"
 GREEN = "\033[32m"
 YELLOW = "\033[93m"
 PURPLE = '\033[0;35m'
+WHITE = '\033[0;37m'
 
 def create_banner():  
     """Creates the banner of the project"""
@@ -91,8 +92,9 @@ def main():
     for subdomain in subdomains:
         status, message = check_subdomain_takeover(subdomain, service_signatures)
         color = RED if status == "Vulnerable" else GREEN
-        print(f"{color}{subdomain}: [{status}] - {message}")
+        print(f"{PURPLE}{subdomain}: {PURPLE}[{color}{status}{PURPLE}] - {message}")
        
+    print(WHITE)
 
 if __name__ == "__main__":
     main()
